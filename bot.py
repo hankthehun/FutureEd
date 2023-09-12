@@ -120,7 +120,7 @@ class Bot:
         new_chi =self.static_chi # Chi is taken as static
 
         self.amount = self.initial_capital * new_chi
-        return min(self.amount, self.max_positions-self.positions)
+        return min(self.amount, self.max_positions-self.positions)  #modified this formula to ensure position limit was never reached
     
 
     def determineSellthreshold(self):
